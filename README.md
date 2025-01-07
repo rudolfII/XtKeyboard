@@ -46,6 +46,6 @@ the press code by 128, i.e., for the Space key is 57 + 128 =
 and the usbasp programmer, but any other method is, of
 course, possible.)
 
-[!keyboard](keyboard.jpg)
-[!beetle](beetle.jpg)
+![keyboard](keyboard.jpg)
+![beetle](beetle.jpg)
 
