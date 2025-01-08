@@ -42,11 +42,16 @@ i.e., 0 0 1 1 1 0 0 1 = 39h = 57. Release code differs from
 the press code by 128, i.e., for the Space key is 57 + 128 =
 185.
 
-The code does not use DigitalWrite() / DigitalRead() etc., those
-seemed to have significant overhead and thus caused real
-problems (those were debugged by monitoring DEBUG0 and
-DEBUG1 outputs -- which exist only for this purpose and
-can be actually removed from the code).
+The code does not use digitalWrite() / digitalRead() --
+those seemed to have significant overhead and thus caused
+real problems (eventually debugged by monitoring DEBUG0 and
+DEBUG1 outputs on an oscilloscope; DEBUG0,1 exist only for
+this purpose and can be removed from the code).  Furthemore,
+the serial line was also used for debugging and can be
+removed. (A little surprise here was that the code does not
+drive the hardware serial-line pins of the processor but,
+instead, a serial line interface is created also over the
+USB connection [alongside the keyboard protocol proper]).
 
 (The programming of the beetle was done using Arduino IDE
 and the usbasp programmer, but any other method is, of
