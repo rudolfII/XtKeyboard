@@ -1,9 +1,9 @@
 # XtKeyboard
 
-This is about the simplest arduino program for an ATMEGA32U4
-processor that I used to connect my old XT keyboard to a
-computer using a USB port. I used a 'Beetle' board for the
-job.
+This is a (deliberately) simple arduino program for an
+ATMEGA32U4 processor that I used to connect my old XT
+keyboard to a computer using a USB port. I used a 'Beetle'
+board for the job.
 
 When I first searched for a similar program, I found some
 that were either unnecesarily complicated and/or did not
